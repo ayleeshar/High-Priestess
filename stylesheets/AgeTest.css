@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Pirata;
+    src: url(../fonts/PirataOne-Regular.ttf);
+}
+
 html, body
 {
     height: 100%;
@@ -73,22 +78,25 @@ html, body
 
 .age-gateway__submit
 {
+    font-family: Pirata;
     margin-bottom: 5rem;
+    margin-top: 1rem;
     background: url("../static/enter-01.svg") no-repeat scroll 0 0 transparent;
     border: none;
     width: 20rem;
     height: 15rem;
     background-position:center;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 4.5rem;
     color: #fff;
-    transition: all 1.5s ease;
+    transition: all 2.5s ease;
 }
 
 .modal-title
 {
-    font-size: 3rem;
-    margin-bottom: 2.4rem;
+    font-family: Pirata;
+    font-size: 8rem;
+    margin-bottom: 0rem;
 }
 
 .modal-paragraph
@@ -98,6 +106,6 @@ html, body
 }
   
 .age-gateway__submit:hover{
-    transform: scale(1.1);
+    transform: rotate(720deg);
     /* transform: rotate(1080deg); */
 }
