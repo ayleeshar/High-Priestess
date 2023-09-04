@@ -209,21 +209,24 @@ li {
   position:relative;
 }
 
-.image-container {
-  width: 300px;
-  height:400px;
-  perspective: 1000px; /* Creates a 3D effect container */
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Evenly space the cards */
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .image-card {
-  width: 100%;
-  height: 100%;
+  width: 300px; /* Calculate width with padding */
+  height: 450px;
+  perspective: 1000px;
   transform-style: preserve-3d;
-  transition: transform 0.5s; /* Smooth transition on hover */
+  transition: transform 0.5s;
 }
 
 .image-card:hover {
-  transform: rotateY(180deg); /* Flips the card to reveal the back */
+  transform: rotateY(180deg);
 }
 
 .image-front,
@@ -231,18 +234,107 @@ li {
   width: 100%;
   height: 100%;
   position: absolute;
-  backface-visibility: hidden; /* Hides the backface of the card */
+  backface-visibility: hidden;
 }
 
-.image-front {
-  /* This is the front image */
-  background-image: url("../static/card-back.jpg");
+.image-front1 {
+  background-image: url("../static/Card1Back.png");
   background-size: cover;
 }
 
-.image-back {
-  /* This is the back image */
-  background-image: url('../static/card.png');
+.image-back1 {
+  background-image: url('../static/Card1Front.png');
   background-size: cover;
-  transform: rotateY(180deg); /* Initially hide the back image */
+  transform: rotateY(180deg);
+}
+
+.image-front2 {
+  background-image: url("../static/Card2Back.png");
+  background-size: cover;
+}
+
+.image-back2 {
+  background-image: url('../static/Card2Front.png');
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.image-front3 {
+  background-image: url("../static/Card3Back.png");
+  background-size: cover;
+}
+
+.image-back3 {
+  background-image: url('../static/Card3Front.png');
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.logo{
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+  position: relative;
+}
+.card-title
+{
+    text-align: center;
+    color: #fff;
+    font-family: Pirata;
+    font-size: 6rem;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.footer-vertical-box
+{
+  display: block;
+}
+
+.footer-flex-wrapper {
+  display: flex;
+  justify-content: space-between; /* Evenly space the cards */
+  flex-direction: row;
+  
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.left-col
+{
+  flex: 0.2;
+  display: flex;
+  justify-content: space-between;
+   
+}
+
+.social-image
+{
+  width: 100px;
+  height: 100px;
+  top: 50%;
+}
+
+.tagline-image
+{
+  width: 80%;
+  display:block;
+    margin:auto;
+}
+
+.middle-col
+{
+  flex: 0.6;
+}
+.right-col
+{
+  flex: 0.2;
+}
+
+.footer-container
+{
+  margin-top: 3%;
+  background-color: #89578C;
 }
