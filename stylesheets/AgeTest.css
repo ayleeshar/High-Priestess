@@ -76,6 +76,7 @@ html, body
     border-bottom: 1px solid #ccc;
 }
 
+
 .age-gateway__submit
 {
     font-family: Pirata;
@@ -109,3 +110,4 @@ html, body
     transform: rotate(720deg);
     /* transform: rotate(1080deg); */
 }
+
